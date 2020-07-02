@@ -1,8 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Клонировать данный репозиторий
+
 
 ## Available Scripts
 
-In the project directory, you can run:
+В папке проекта установить зависимости с помощью команды npm init
 
 ### `yarn start`
 
