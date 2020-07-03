@@ -1,0 +1,16 @@
+.layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.layout__content{
+    border-radius: 30px;
+    height: 400px;
+    width: 800px;
+    padding: 70px 120px;
+    background-color: #fff;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}

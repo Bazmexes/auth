@@ -4,9 +4,11 @@ import './authPage.scss'
 import {Redirect, Route} from 'react-router-dom'
 import {actionLogIn} from '../../redux/actions/actions'
 class AuthPage extends React.Component{
+
     _stopReload(e){
         e.preventDefault()
     }
+
     _logIn(){
         const email = document.getElementById('emailInput').value
         const password = document.getElementById('passwordInput').value
@@ -29,15 +31,17 @@ class AuthPage extends React.Component{
     }
 
     render(){
-        console.log("this.props.log", this.props.log)
         if(this.props.log===false){
             return(
                 <div className="auth-page">
                 <div className="auth-page__content">
-                    <form onSubmit={(e)=>this._stopReload(e)}>
-                        <input id="emailInput"  type="email" required/>
-                        <input id="passwordInput" type="password" required/>
-                        <input type="submit" onClick={()=> this._logIn()}/>
+                    <div className="auth-page__header">
+                        <h3>Авторизация</h3>
+                    </div>
+                    <form className="auth-page__form" onSubmit={(e)=>this._stopReload(e)}>
+                        <input id="emailInput"  type="email" required placeholder="Введите логин"/>
+                        <input id="passwordInput" type="password" required placeholder="Введите пароль"/>
+                        <button type="submit" onClick={()=> this._logIn()}>Войти</button>
                     </form>
                 </div>
                 </div>)

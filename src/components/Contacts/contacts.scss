@@ -1,0 +1,27 @@
+.contacts{
+    display: grid;
+    align-items: center;
+}
+.contacts__form_box{
+    margin-top: 20px;
+    h3{
+        text-align: center;
+    }
+    form{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        input{
+            padding: 20px 5px;
+            background-color: #e6e6e6;
+            border: solid 1px black;
+            font-size: 15px;
+        }
+    }
+    div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+
+    }
+}
