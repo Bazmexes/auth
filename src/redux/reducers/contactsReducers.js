@@ -1,13 +1,14 @@
-import {_UPDATECONTACTSREDUCER} from '../actions/actionsTypes'
+import { _UPDATECONTACTSREDUCER } from '../actions/actionsTypes'
 const initialState = {
-    contacts: []
+    contacts: [],
 }
-export default function(state = initialState, action){
-    switch(action.type){
-        case _UPDATECONTACTSREDUCER :
-            return{
-            contacts: action.payload
+export default function (state = initialState, action) {
+    switch (action.type) {
+        case _UPDATECONTACTSREDUCER:
+            return {
+                contacts: action.payload,
             }
-        default: return state
+        default:
+            return state
     }
 }
