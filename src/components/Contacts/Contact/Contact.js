@@ -65,8 +65,19 @@ class Contact extends React.Component{
             email: this.props.contact.email
         })
     }
+    _clearState(e){        
+        const form = document.getElementById(`${e.target.name}form`)
+        console.log(form)
+        form.classList.toggle('form_active')
+        this.setState({
+            name: '',
+            phone: '',
+            email: ''
+    })
+    console.log(this.state)
+
+    }
     render(){
-        console.log(this.props)
         return(
             <div className="contact">
             <div className="contact__p" >
@@ -84,7 +95,7 @@ class Contact extends React.Component{
                     <input type="email" name="email" onChange={(e)=> this._handlerChange(e)} id={`${this.props.contact.id}name`} value={this.state.email} placeholder={this.props.contact.email}/>
                     <div className="contact__box-button">
                         <button name={this.props.contact.id} onClick={(e)=> this._changeContact(e)}>Сохранить</button>
-                        <button name={this.props.contact.id} onClick={(e)=> this._toggleForm(e)}>Отмена</button>
+                        <button name={this.props.contact.id} onClick={(e)=>  this._clearState(e)}>Отмена</button>
                     </div>
             </form>
             </div>

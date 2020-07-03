@@ -25,3 +25,8 @@
 
     }
 }
+.formm{
+    display: grid;
+    grid-template-columns: repeat(3, 210px);
+    grid-column-gap: 12px;
+}

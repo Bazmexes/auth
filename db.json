@@ -1,10 +1,38 @@
 {
-    "contacts": [
-        {
-            "name": "cris"
-        },
-        {
-            "name": "govnoman"
-        }
-    ]
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Влад",
+      "phone": "8 950 3223 23 23",
+      "email": "dsadadsa@gmail.com"
+    },
+    {
+      "name": "Паша",
+      "phone": "8 950 3223 23 32",
+      "email": "pasha@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Влад",
+      "phone": "8 950 3223 23 23",
+      "email": "dsdsds@gkds.com",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "Витя",
+      "phone": "8 950 3223 23 25",
+      "email": "dsadadsa@gmail.com"
+    }
+  ],
+  "users": [
+    {
+      "email": "bma@gmail.com",
+      "password": "qwerty"
+    },
+    {
+      "email": "bmadd@gmail.com",
+      "password": "qdwerty"
+    }
+  ]
 }
